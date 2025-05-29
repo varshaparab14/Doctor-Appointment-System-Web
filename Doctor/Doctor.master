@@ -1,0 +1,241 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Doctor.master.cs" Inherits="Account_Account" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="../assets/js/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Doccure</title>
+
+    <!-- Favicons -->
+    <link type="image/x-icon" href="../assets/img/favicon.png" rel="icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Main Wrapper -->
+            <div class="main-wrapper">
+
+                <!-- Header -->
+                <header class="header">
+                    <nav class="navbar navbar-expand-lg header-nav">
+                        <div class="navbar-header">
+                            <a id="mobile_btn" href="javascript:void(0);">
+                                <span class="bar-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                            <a href="Dashboard.aspx" class="navbar-brand logo">
+                                <img src="../assets/img/logo.png" class="img-fluid" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="main-menu-wrapper">
+                            <div class="menu-header">
+                                <a href="index-2.html" class="menu-logo">
+                                    <img src="../assets/img/logo.png" class="img-fluid" alt="Logo">
+                                </a>
+                                <a id="menu_close" class="menu-close" href="javascript:void(0);">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                            <ul class="main-nav">
+                                <li><a href="DoctorDetails.aspx">Profile</a></li>
+                                <li><a href="DoctorSchedule.aspx">Schedule</a></li>
+                                <li><a href="DoctorEducation.aspx">Education</a></li>
+                                <li><a href="DoctorExperiance.aspx">Work Experiance</a></li>
+                                <li><a href="DoctorServices.aspx">Services</a></li>
+                                <li><a href="DoctorSpecialization.aspx">Specialization</a></li>
+                                <li><a href="DoctorAwards.aspx">Awards</a></li>
+                            </ul>
+                        </div>
+                        <ul class="nav header-navbar-rht">
+                            <li class="nav-item contact-item">
+                                <div class="header-contact-img">
+                                    <i class="far fa-hospital"></i>
+                                </div>
+                                <div class="header-contact-detail">
+                                    <p class="contact-header">Contact</p>
+                                    <p class="contact-info-header">+91 7506892290</p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-login" href="../Account/Logout.aspx">Logout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- /Header -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- Footer -->
+                <footer class="footer">
+
+                    <!-- Footer Top -->
+                    <div class="footer-top">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+
+                                    <!-- Footer Widget -->
+                                    <div class="footer-widget footer-about">
+                                        <div class="footer-logo">
+                                            <img src="../assets/img/footer-logo.png" alt="logo">
+                                        </div>
+                                        <div class="footer-about-content">
+                                            <p>Search Doctor, Make an Appointment. Discover the best doctors, clinic & hospital the city nearest to you.</p>
+                                            <div class="social-icon">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Footer Widget -->
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+
+                                    <!-- Footer Widget -->
+                                    <div class="footer-widget footer-menu">
+                                        <h2 class="footer-title">For Patients</h2>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Search for Doctors</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Login</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Register</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Booking</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Patient Dashboard</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /Footer Widget -->
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+
+                                    <!-- Footer Widget -->
+                                    <div class="footer-widget footer-menu">
+                                        <h2 class="footer-title">For Doctors</h2>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Appointments</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Login</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Register</a></li>
+                                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Doctor Dashboard</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /Footer Widget -->
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+
+                                    <!-- Footer Widget -->
+                                    <div class="footer-widget footer-contact">
+                                        <h2 class="footer-title">Contact Us</h2>
+                                        <div class="footer-contact-info">
+                                            <div class="footer-address">
+                                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                                <p>Varsha Parab, <br />C 102 Shivram Park,<br>
+                                                    Bhandup West, <br />Mumbai 400078 </p>
+                                            </div>
+                                            <p>
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 7506892290
+                                            </p>
+                                            <p class="mb-0">
+                                                <i class="fas fa-envelope"></i>
+                                                varshaparab223@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- /Footer Widget -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Footer Top -->
+
+                    <!-- Footer Bottom -->
+                    <div class="footer-bottom">
+                        <div class="container-fluid">
+
+                            <!-- Copyright -->
+                            <div class="copyright">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="copyright-text">
+                                            <p class="mb-0">&copy; 2019 Doccure. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+
+                                        <!-- Copyright Menu -->
+                                        <div class="copyright-menu">
+                                            <ul class="policy-menu">
+                                            </ul>
+                                        </div>
+                                        <!-- /Copyright Menu -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Copyright -->
+
+                        </div>
+                    </div>
+                    <!-- /Footer Bottom -->
+
+                </footer>
+                <!-- /Footer -->
+
+            </div>
+            <!-- /Main Wrapper -->
+
+            <!-- jQuery -->
+            
+
+            <!-- Bootstrap Core JS -->
+            <script src="../assets/js/popper.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+
+            <!-- Slick JS -->
+            <script src="../assets/js/slick.js"></script>
+
+            <!-- Custom JS -->
+            <script src="../assets/js/script.js"></script>
+        </div>
+    </form>
+</body>
+</html>
